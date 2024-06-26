@@ -8,5 +8,7 @@ namespace ASM.Models
         public string LastName { get; set; } = "";
         public string Address { get; set; } = "";
         public DateTime CreatedAt { get; set; }
-     }
+        public virtual ICollection<ApplicationUserRole> UserRoles { get; set; }
+
+    }
 }
